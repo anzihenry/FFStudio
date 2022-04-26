@@ -16,7 +16,7 @@ find_package(Qt5 COMPONENTS
 
 include_directories(/usr/local/include)
 link_directories(/usr/local/lib)
-add_executable(FFStudio main.cpp metadata/MetaInfo.cpp metadata/MetaInfo.h)
+add_executable(FFStudio main.cpp)
 
 target_link_libraries(FFStudio
         Qt5::Core
