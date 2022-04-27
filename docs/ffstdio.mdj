@@ -1,0 +1,79 @@
+{
+	"_type": "Project",
+	"_id": "AAAAAAFF+h6SjaM2Hec=",
+	"name": "FFStudio",
+	"ownedElements": [
+		{
+			"_type": "UMLModel",
+			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "Model",
+			"ownedElements": [
+				{
+					"_type": "UMLUseCase",
+					"_id": "AAAAAAGAazwbpF7fGzc=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Get MediaFile Metadata",
+					"ownedElements": [
+						{
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGAa0Uck179jhs=",
+							"_parent": {
+								"$ref": "AAAAAAGAazwbpF7fGzc="
+							},
+							"name": "Get Video Metadata"
+						},
+						{
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGAa0VyGF8B4Lk=",
+							"_parent": {
+								"$ref": "AAAAAAGAazwbpF7fGzc="
+							},
+							"name": "Get Audio Metadata"
+						}
+					]
+				},
+				{
+					"_type": "UMLActor",
+					"_id": "AAAAAAGAaz3Ix17mkVo=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "User"
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "AAAAAAGAaz5UFV7q66k=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Convert Media File Format"
+				},
+				{
+					"_type": "UMLUseCase",
+					"_id": "AAAAAAGAaz9faF7uuTM=",
+					"_parent": {
+						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
+					},
+					"name": "Analyze Media File",
+					"ownedElements": [
+						{
+							"_type": "UMLUseCase",
+							"_id": "AAAAAAGAa0C4DV70yGc=",
+							"_parent": {
+								"$ref": "AAAAAAGAaz9faF7uuTM="
+							},
+							"name": "Demux Media File"
+						}
+					]
+				}
+			]
+		}
+	],
+	"author": "Henry Tse",
+	"version": "0.1.0"
+}
